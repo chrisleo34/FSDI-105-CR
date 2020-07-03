@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Register</title>
+</head>
+<style>
+
+
+</style>
+<body>
+
+    <nav>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="register.html">Register</a>
+            </li>
+            
+        </ul>
+                
+            </ul>
+            </div>
+    </nav>       
+    <div class="container">
+            <h2 class="display-4 text-center header"> Register a Pet</h2>
+        
+        <main>
+            <div class="move">
+                <form class="" action="">
+                    <div class="form-group row">
+                        <label  for="name"> Name:</label>
+                        
+                        <input class="form-control" id="petName" type="text">
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="age">Age:</label>
+                        <div class="col-sm-2 col-form-label">
+                            <input class="form-control"id="petAge" type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label  class="col-sm-2 col-form-label"for="breed">Breed:</label>
+                        <div class="col-sm-2 col-form-label">
+                            <input class="form-control"id="petBreed" type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"for="gender">Gender:</label>
+                        <div class="col-sm-10">
+                            <input class="form-control"id="petGender" type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"for="service">Service:</label>
+                        <select class="form control" name="Service" id="petService">
+                        
+                            <option value="Full Service">Full Service
+                            </option>
+                            <option value="Half Service">Half  Service
+                            </option>
+                            <option value="Simple Service">Simple Service
+                            </option>
+                            <option value="Fur Styling">Fur Styling
+                            </option>
+                            <option value="Fur Cut Only">Fur Cut Only</option>
+                            <option value="Mani Pedi">Mani Pedi</option>
+                            
+                          
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label"for="service2">2nd Service(Optional):</label>
+                        
+                        <select class="form control" name="Service2" id="petService2">
+                        
+                            <option value="Full Service">Full Service
+                            </option>
+                            <option value="Half Service">Half  Service
+                            </option>
+                            <option value="Simple Service">Simple Service
+                            </option>
+                            <option value="Fur Styling">Fur Styling
+                            </option>
+                            <option value="Fur Cut Only">Fur Cut Only</option>
+                            <option value="Mani Pedi">Mani Pedi</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="ownerName">Owners name</label>
+                        <input class="form-control"id="petOwner" type="text">
+                    </div>
+                    <div class="form-group row">
+                        <label for="Contactphone">Contact Phone</label>
+                        <input class="form-control"id="contactPhone" type="text">
+                    </div>
+                    
+                </form>
+            </div>
+            
+            <div class="buton" >
+                <input class="btn btn-dark" type="button" value="Register" onclick="register();">
+            </div>
+            
+        </main>
+        
+        <div class="search ">
+            <input type="search" class="buton  search" id="petSearch">
+            <button class=" move btn btn-sm btn-dark buton" onclick="searchPet()";> search</button>
+        </div>
+        
+    </div class="pets">
+        <table class="table table-hover table-secondary" >
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Breed</th>
+                <th>Service</th>
+                <th>2nd Service</th>
+                <th>Owner Name</th>
+                <th>Contact Phone</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="rowPet">
+            
+            
+            </tbody>
+        </table>
+    </div> 
+    
+    
+    <footer>
+        <div id="footer-info">
+        2534 K St, London,England &copy;Your Fashion Pet
+        </div>
+    </footer>
+    
+   <script src="/js/register.js" ></script>
+    
+    
+</body>
+</html>
